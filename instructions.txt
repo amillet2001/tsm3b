@@ -1,0 +1,41 @@
+------- clearing previous links to github --------- 5 points
+
+1. go to windows search bar and search - Manage Windows Credentials
+2. click Windows Credential
+3. Under Generic Credential find all links to github (if none skip step 4)
+4. click the github link and click remove and yes
+
+-------- log out signed in github account ------- 5 points
+
+1. open the edge browser
+2. go to github.com
+3. if there is an existing account logged in, log it out. (if none proceed to next step)
+
+------- git author reset --------- 5 points
+
+1. create a folder with your lastname
+2. open gitbash here
+3. git init
+4. reset the author (git commit --amend --reset-author)
+5. set new author
+
+-------- connecting from git to github ------- 15 points
+
+1. clone the assigned repository 1 point
+2. access the cloned repo        1 point
+3. create new branch using your lastname-local 1 point
+4. create a new directory/folder name it as your student number 1 point
+5. create a file then commit it 1 point
+6. perform git push -u lastname-local 1 point
+7. sign in 1 point
+8. create a static website and form a mini portfolio that has your name, age, section, hobbies and a message about your IPT2 teacher name it as yourstudentnum-profile.html - 3 points
+9. add pictures and designs (perform push) 2 points
+10. copy all your commands from git and create new file named lastname-logs.txt inside your folder 1 point
+11. commit the lastname-logs.txt 1 point
+12. create a pull request 1 point
+
+------------ done ---------------------------
+
+
+
+
