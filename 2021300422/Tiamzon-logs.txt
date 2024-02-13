@@ -1,0 +1,124 @@
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon
+$ git init
+Initialized empty Git repository in C:/Users/Adrian/Desktop/Tiamzon/.git/
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon (master)
+$ git commit --amend --reset-author
+fatal: You have nothing to amend.
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon (master)
+$ git config --global user.name "AJTiamzon"
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon (master)
+$ git config --global user.email adrianjennelltiamzon@gmail.com
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon (master)
+$ git config https://github.com/amillet2001/TSM3B
+error: invalid key: https://github.com/amillet2001/TSM3B
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon (master)
+$ git clone https://github.com/amillet2001/TSM3B
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 114, done.
+remote: Counting objects: 100% (53/53), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 114 (delta 35), reused 31 (delta 24), pack-reused 61Receiving obje
+Receiving objects:  89% (102/114)
+Receiving objects: 100% (114/114), 91.52 KiB | 1.19 MiB/s, done.
+Resolving deltas: 100% (39/39), done.
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon (master)
+$ cd TSM3B
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (main)
+$ git checkout -b "Tiamzon-local"
+Switched to a new branch 'Tiamzon-local'
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ mkdir 2021300422
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ touch firstfile.txt
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git add .
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git commit -m "First Commited File"
+[Tiamzon-local 4e931b5] First Commited File
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 firstfile.txt
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git push -u Tiamzon-local
+fatal: 'Tiamzon-local' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git push --set-upstream origin Tiamzon-local
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 256 bytes | 256.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   9a869ba..4e931b5  Tiamzon-local -> Tiamzon-local
+branch 'Tiamzon-local' set up to track 'origin/Tiamzon-local'.
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git push -u Tiamzon-local
+fatal: 'Tiamzon-local' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git push --set-upstream origin Tiamzon-local
+Everything up-to-date
+branch 'Tiamzon-local' set up to track 'origin/Tiamzon-local'.
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git push
+Everything up-to-date
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git push
+Everything up-to-date
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git add .
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git commit -m "The HTML Commit"
+[Tiamzon-local 8482226] The HTML Commit
+ 1 file changed, 41 insertions(+)
+ create mode 100644 2021300422/2021300422-profile.html
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 955 bytes | 955.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   4e931b5..8482226  Tiamzon-local -> Tiamzon-local
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B (Tiamzon-local)
+$ cd 2021300422
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B/2021300422 (Tiamzon-local)
+$ touch Tiamzon-logs.txt
+
+Adrian@BigRED MINGW64 ~/Desktop/Tiamzon/TSM3B/2021300422 (Tiamzon-local)
+$
