@@ -1,0 +1,119 @@
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ git init
+Initialized empty Git repository in C:/Users/C311-PC09/Desktop/Catap/.git/
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ touch test.txt
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ git add .
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ git commit --amend -- reset-author -m "resetting author"
+fatal: You have nothing to amend.
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ git commit -m "this is commit 1"
+[master (root-commit) 0a1a75b] this is commit 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ echo "tinay" > test.text
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ echo "tinay" > test.txt
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ git config --global user.name "Tinay"
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ git config --global user.email "CatapTinay@gmail.com"
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ git clone https://github.com/amillet2001/TSM3B
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 207, done.
+remote: Counting objects: 100% (83/83), done.
+remote: Compressing objects: 100% (40/40), done.
+remote: Total 207 (delta 61), reused 43 (delta 43), pack-reused 124
+Receiving objects: 100% (207/207), 110.57 KiB | 1.45 MiB/s, done.
+Resolving deltas: 100% (75/75), done.
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap (master)
+$ cd TSM3B
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B (main)
+$ git checkout -b Catap-iptq1
+Switched to a new branch 'Catap-iptq1'
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B (Catap-iptq1)
+$ mkdir 2021300582
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B (Catap-iptq1)
+$ git init
+Reinitialized existing Git repository in C:/Users/C311-PC09/Desktop/Catap/TSM3B/.git/
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B (Catap-iptq1)
+$ ls
+ 2021300582/   2021300782   README.md  'ask about bill.docx'   instructions.txt
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B (Catap-iptq1)
+$ cd 2021300582
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B/2021300582 (Catap-iptq1)
+$ touch test.txt
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B/2021300582 (Catap-iptq1)
+$ git add .
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B/2021300582 (Catap-iptq1)
+$ git status
+On branch Catap-iptq1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B/2021300582 (Catap-iptq1)
+$ git commit -m "ipt2"
+[Catap-iptq1 e89307a] ipt2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300582/test.txt
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B/2021300582 (Catap-iptq1)
+$ git push -u origin Catap-iptq1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Catap-iptq1' on GitHub by visiting:
+remote:      https://github.com/amillet2001/TSM3B/pull/new/Catap-iptq1
+remote:
+To https://github.com/amillet2001/TSM3B
+ * [new branch]      Catap-iptq1 -> Catap-iptq1
+branch 'Catap-iptq1' set up to track 'origin/Catap-iptq1'.
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B/2021300582 (Catap-iptq1)
+$ git checkout Catap-iptq1
+Already on 'Catap-iptq1'
+Your branch is up to date with 'origin/Catap-iptq1'.
+
+311-PC09@311-PC9 MINGW64 ~/Desktop/Catap/TSM3B/2021300582 (Catap-iptq1)
+$
