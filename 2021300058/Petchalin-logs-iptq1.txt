@@ -1,0 +1,212 @@
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (FabiconMJ)
+$ git init
+Initialized empty Git repository in C:/Users/C411/Desktop/Petchalin/.git/
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ touch test.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git add test.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git commit -m "first commit"
+[master (root-commit) 5cb0f87] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git commit --amend --reset-author -m "reseting author"
+[master 4ce7a0e] reseting author
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ echo "first modify" > test.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git add .
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git add test.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git config --global user.name "MA.VIRGIE"
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git conig --global user.email mpetchalin@gmail.com
+git: 'conig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git config --global user.email mpetchalin@gmail.com
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git clone https://github.com/amillet2001/TSM3B/tree/main
+Cloning into 'main'...
+fatal: repository 'https://github.com/amillet2001/TSM3B/tree/main/' not found
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ git clone https://github.com/amillet2001/TSM3B
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 167, done.
+remote: Counting objects: 100% (106/106), done.
+remote: Compressing objects: 100% (69/69), done.
+remote: Total 167 (delta 56), reused 63 (delta 32), pack-reused 61
+Receiving objects: 100% (167/167), 106.18 KiB | 724.00 KiB/s, done.
+Resolving deltas: 100% (60/60), done.
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin (master)
+$ cd TSM3B
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B (main)
+$ git checkout -b Petchalin-iptq1
+Switched to a new branch 'Petchalin-iptq1'
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B (Petchalin-iptq1)
+$ mkdir 2021300058
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B (Petchalin-iptq1)
+$ cd 2021300058
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ touch gie.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git add gie.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git commit -m "first file to commit"
+[Petchalin-iptq1 d7eabbb] first file to commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300058/gie.txt
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git status
+On branch Petchalin-iptq1
+nothing to commit, working tree clean
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git push -u origin Petchalin-iptq1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Petchalin-iptq1' on GitHub by visiting:
+remote:      https://github.com/amillet2001/TSM3B/pull/new/Petchalin-iptq1
+remote:
+To https://github.com/amillet2001/TSM3B
+ * [new branch]      Petchalin-iptq1 -> Petchalin-iptq1
+branch 'Petchalin-iptq1' set up to track 'origin/Petchalin-iptq1'.
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git add .
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git commit -m "my commit"
+[Petchalin-iptq1 225e617] my commit
+ 1 file changed, 18 insertions(+)
+ create mode 100644 2021300058/2021300058-profile.html
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git status
+On branch Petchalin-iptq1
+Your branch is ahead of 'origin/Petchalin-iptq1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git add 2021300058-profile.html
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git status
+On branch Petchalin-iptq1
+Your branch is ahead of 'origin/Petchalin-iptq1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git commit -m "commit"
+On branch Petchalin-iptq1
+Your branch is ahead of 'origin/Petchalin-iptq1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git status
+On branch Petchalin-iptq1
+Your branch is ahead of 'origin/Petchalin-iptq1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git push -u origin Petchalin-iptq1
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 718 bytes | 718.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   d7eabbb..225e617  Petchalin-iptq1 -> Petchalin-iptq1
+branch 'Petchalin-iptq1' set up to track 'origin/Petchalin-iptq1'.
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git status
+On branch Petchalin-iptq1
+Your branch is up to date with 'origin/Petchalin-iptq1'.
+
+nothing to commit, working tree clean
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ cd 2021300058
+bash: cd: 2021300058: No such file or directory
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git add .
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git commit -m "commit"
+[Petchalin-iptq1 da29e25] commit
+ 1 file changed, 1 insertion(+)
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$ git push -u origin Petchalin-iptq1
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 12.53 KiB | 6.26 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   225e617..da29e25  Petchalin-iptq1 -> Petchalin-iptq1
+branch 'Petchalin-iptq1' set up to track 'origin/Petchalin-iptq1'.
+
+C411@DESKTOP-O2KOJNV MINGW64 ~/Desktop/Petchalin/TSM3B/2021300058 (Petchalin-iptq1)
+$
