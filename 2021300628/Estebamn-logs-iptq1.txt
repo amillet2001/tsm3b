@@ -1,0 +1,136 @@
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann
+$ git init
+Initialized empty Git repository in C:/Users/C411/Desktop/Estebann/.git/
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ touch test.txt
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ git commit --amend -reset-author -m"resetting author"
+error: did you mean `--reset-author` (with two dashes)?
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ git commit --amend --reset-author -m"resetting author"
+fatal: You have nothing to amend.
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ echo "Hello" > test.txt
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ git add .
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ git commit -m "This is my commit"
+[master (root-commit) 7aec632] This is my commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ git config --global user.name LeonardAnthonyy
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ git config --global user.email leoesteban00@gmail.com
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ git clone https://github.com/amillet2001/TSM3B
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 441, done.
+remote: Counting objects: 100% (201/201), done.
+remote: Compressing objects: 100% (110/110), done.
+remote: Total 441 (delta 123), reused 114 (delta 90), pack-reused 240
+Receiving objects: 100% (441/441), 1.22 MiB | 5.08 MiB/s, done.
+Resolving deltas: 100% (161/161), done.
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann (master)
+$ cd TSM3B
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B (main)
+$ git checkout -b Estebann-iptq1
+Switched to a new branch 'Estebann-iptq1'
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B (Estebann-iptq1)
+$ mkdir 2021300628
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B (Estebann-iptq1)
+$ cd 2021300628
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ touch File.txt
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git add .
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git commit -m "This is the file"
+[Estebann-iptq1 94b48e6] This is the file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300628/File.txt
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git push -u origin Estebann-iptq1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   26d8dc3..94b48e6  Estebann-iptq1 -> Estebann-iptq1
+branch 'Estebann-iptq1' set up to track 'origin/Estebann-iptq1'.
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git add 2021300628-profile.html
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git commit -m "202130628-profile 1commit"
+[Estebann-iptq1 e6e2e41] 202130628-profile 1commit
+ 1 file changed, 26 insertions(+)
+ create mode 100644 2021300628/2021300628-profile.html
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git push -u origin Estebann-iptq1
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 719 bytes | 719.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   94b48e6..e6e2e41  Estebann-iptq1 -> Estebann-iptq1
+branch 'Estebann-iptq1' set up to track 'origin/Estebann-iptq1'.
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git status
+On branch Estebann-iptq1
+Your branch is up to date with 'origin/Estebann-iptq1'.
+
+nothing to commit, working tree clean
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git add .
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git commit -m "This is the second commit"
+On branch Estebann-iptq1
+Your branch is up to date with 'origin/Estebann-iptq1'.
+
+nothing to commit, working tree clean
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git push -u origin Estebann-iptq1
+Everything up-to-date
+branch 'Estebann-iptq1' set up to track 'origin/Estebann-iptq1'.
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$ git status
+On branch Estebann-iptq1
+Your branch is up to date with 'origin/Estebann-iptq1'.
+
+nothing to commit, working tree clean
+
+C411@DESKTOP-702BNF5 MINGW64 ~/Desktop/Estebann/TSM3B/2021300628 (Estebann-iptq1)
+$
