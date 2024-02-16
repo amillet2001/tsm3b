@@ -1,0 +1,332 @@
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT
+$ git init
+Initialized empty Git repository in C:/Users/Student411/Desktop/BALANQUIT/.git/
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ touch test.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git add test.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git commit -m "this is my first commit"
+[master (root-commit) 614482a] this is my first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git commit --amend --reset-author -m "reseting author"
+[master 74af059] reseting author
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ echo "sana pumasa" > test.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git config --global user.name "BIENVENIDO"
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git config --global user.email christianmanzano31@gmail.com
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git add .
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ git clone https://github.com/amillet2001/TSM3B
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 167, done.
+remote: Counting objects: 100% (106/106), done.
+remote: Compressing objects: 100% (69/69), done.
+remote: Total 167 (delta 56), reused 63 (delta 32), pack-reused 61
+Receiving objects: 100% (167/167), 106.18 KiB | 913.00 KiB/s, done.
+Resolving deltas: 100% (60/60), done.
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT (master)
+$ cd TSM3B
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B (main)
+$ git checkout -b Balanquit-iptq1
+Switched to a new branch 'Balanquit-iptq1'
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B (Balanquit-iptq1)
+$ mkdir 2021300576
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B (Balanquit-iptq1)
+$ cd 2021300576
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ touch jhayr.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add jhayr.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git commit -m "Inside branch commiting"
+[Balanquit-iptq1 1106afd] Inside branch commiting
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300576/jhayr.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+nothing to commit, working tree clean
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git push -u origin Balanquit-iptq1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Balanquit-iptq1' on GitHub by visiting:
+remote:      https://github.com/amillet2001/TSM3B/pull/new/Balanquit-iptq1
+remote:
+To https://github.com/amillet2001/TSM3B
+ * [new branch]      Balanquit-iptq1 -> Balanquit-iptq1
+branch 'Balanquit-iptq1' set up to track 'origin/Balanquit-iptq1'.
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git push -u origin Balanquit-iptq1
+Everything up-to-date
+branch 'Balanquit-iptq1' set up to track 'origin/Balanquit-iptq1'.
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add .
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git commit -m "this is my commit"
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add .
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add 2021300576-profile.html
+fatal: pathspec '2021300576-profile.html' did not match any files
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add .
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ ls
+jhayr.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ echo "kalito" > jhayr.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git commit -m "Inside Branch Commiting"
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   jhayr.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add .
+warning: in the working copy of '2021300576/jhayr.txt', LF will be replaced by CRLF the next time Git touches it
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   jhayr.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git push -u origin Balanquit-iptq1
+Everything up-to-date
+branch 'Balanquit-iptq1' set up to track 'origin/Balanquit-iptq1'.
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   jhayr.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add .
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+Your branch is up to date with 'origin/Balanquit-iptq1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   jhayr.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300576-profile.html
+
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add .
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git commit -m "Inside Branch Commiting"
+[Balanquit-iptq1 20dccf3] Inside Branch Commiting
+ 2 files changed, 24 insertions(+)
+ create mode 100644 2021300576/2021300576-profile.html
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git status
+On branch Balanquit-iptq1
+Your branch is ahead of 'origin/Balanquit-iptq1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ cd 2021300576
+bash: cd: 2021300576: No such file or directory
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ cd TSM3B
+bash: cd: TSM3B: No such file or directory
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ ls
+2021300576-profile.html  jhayr.txt
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git add .
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git commit -m "Adding pictures"
+[Balanquit-iptq1 31de9b2] Adding pictures
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$ git push -u origin Balanquit-iptq1
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 8.52 KiB | 4.26 MiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   1106afd..31de9b2  Balanquit-iptq1 -> Balanquit-iptq1
+branch 'Balanquit-iptq1' set up to track 'origin/Balanquit-iptq1'.
+
+Student411@DESKTOP-1LJILDT MINGW64 ~/Desktop/BALANQUIT/TSM3B/2021300576 (Balanquit-iptq1)
+$
