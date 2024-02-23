@@ -1,0 +1,200 @@
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason
+$ git init
+Initialized empty Git repository in C:/Users/C412-PC4/Desktop/cabungason/.git/
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ touch test.txt
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git add .
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git commit -m "test.txt 1st commit"
+[master (root-commit) 0e1c766] test.txt 1st commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git commit --amend --reset-author -m "resetting author"
+[master ad69a1f] resetting author
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ echo "labyu sir " > test.txt
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git add .
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git commit -m "test.txt 2nd commit"
+[master 61286f3] test.txt 2nd commit
+ 1 file changed, 1 insertion(+)
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git config user.name "Andreux"
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git config user.email "shirazodreux@gmail.com"
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ git clone https://github.com/amillet2001/TSM3B
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 183, done.
+remote: Counting objects: 100% (122/122), done.
+remote: Compressing objects: 100% (77/77), done.
+remote: Total 183 (delta 61), reused 78 (delta 36), pack-reused 61
+Receiving objects: 100% (183/183), 107.88 KiB | 1.40 MiB/s, done.
+Resolving deltas: 100% (65/65), done.
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason (master)
+$ cd TSM3B
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B (main)
+$ git checkout -b cabungason-iptq1
+Switched to a new branch 'cabungason-iptq1'
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B (cabungason-iptq1)
+$ mkdir 2021300467
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B (cabungason-iptq1)
+$ cd 2021300467
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ touch dru.txt
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git add .
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git commit -m "dru.txt 1st commit"
+[cabungason-iptq1 2a52442] dru.txt 1st commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300467/dru.txt
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git push u- origin cabungason-iptq1
+fatal: 'u-' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git push -u origin cabungason-iptq1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'cabungason-iptq1' on GitHub by visiting:
+remote:      https://github.com/amillet2001/TSM3B/pull/new/cabungason-iptq1
+remote:
+To https://github.com/amillet2001/TSM3B
+ * [new branch]      cabungason-iptq1 -> cabungason-iptq1
+branch 'cabungason-iptq1' set up to track 'origin/cabungason-iptq1'.
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git push -u origin cabungason-iptq1
+Everything up-to-date
+branch 'cabungason-iptq1' set up to track 'origin/cabungason-iptq1'.
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git status
+On branch cabungason-iptq1
+Your branch is up to date with 'origin/cabungason-iptq1'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../2021300782
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2021300467-profile.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git add .
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git commit -m "html file 1st commit"
+[cabungason-iptq1 7a76d73] html file 1st commit
+ 1 file changed, 17 insertions(+)
+ create mode 100644 2021300467/2021300467-profile.html
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git push -u origin cabungason-iptq1
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 655 bytes | 655.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   2a52442..7a76d73  cabungason-iptq1 -> cabungason-iptq1
+branch 'cabungason-iptq1' set up to track 'origin/cabungason-iptq1'.
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git status
+On branch cabungason-iptq1
+Your branch is up to date with 'origin/cabungason-iptq1'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   2021300467-profile.html
+        deleted:    ../2021300782
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git add .
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git commit -m "html file 2nd commit"
+[cabungason-iptq1 88360d5] html file 2nd commit
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 2021300467/New Text Document.txt
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$ git push -u origin cabungason-iptq1
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 577 bytes | 577.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/amillet2001/TSM3B
+   7a76d73..88360d5  cabungason-iptq1 -> cabungason-iptq1
+branch 'cabungason-iptq1' set up to track 'origin/cabungason-iptq1'.
+
+C412-PC4@DESKTOP-DT85TUN MINGW64 ~/Desktop/cabungason/TSM3B/2021300467 (cabungason-iptq1)
+$

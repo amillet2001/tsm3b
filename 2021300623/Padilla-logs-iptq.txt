@@ -1,0 +1,199 @@
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA
+$ git init
+Initialized empty Git repository in C:/Users/Student411/Desktop/PADILLA/.git/
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ touch test.txt
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git add test.txt
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git commit -m "First Commit"
+[master (root-commit) 2a4255b] First Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git commit --amend --reset-author -m "resetting author"
+[master 87ef82c] resetting author
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ echo "Hello sirr" > test.txt
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ echo "Hello sir" > test.txt
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git add test.txt
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git commit -m "Second Commit"
+[master e4644dd] Second Commit
+ 1 file changed, 1 insertion(+)
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git config --global user.name "JohnPaulPadilla04"
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git config --global user.email johnpaulpadilla24@gmail.com
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ git clone https://github.com/amillet2001/TSM3B
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 180, done.
+remote: Counting objects: 100% (119/119), done.
+remote: Compressing objects: 100% (76/76), done.
+remote: Total 180 (delta 60), reused 75 (delta 35), pack-reused 61
+Receiving objects: 100% (180/180), 107.62 KiB | 1.22 MiB/s, done.
+Resolving deltas: 100% (64/64), done.
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA (master)
+$ cd TSM3B
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B (main)
+$ checkout -b Padilla-iptq1
+bash: checkout: command not found
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B (main)
+$ checkout -b "Padilla-iptq1"
+bash: checkout: command not found
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B (main)
+$ git checkout -b "Padilla-iptq1"
+Switched to a new branch 'Padilla-iptq1'
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B (Padilla-iptq1)
+$ mkdir 2021300623
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B (Padilla-iptq1)
+$ cd 2021300623
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ touch Pol.txt
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git add .
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git commit -m "Third Commit"
+[Padilla-iptq1 d99413d] Third Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300623/Pol.txt
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git status
+On branch Padilla-iptq1
+nothing to commit, working tree clean
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git push -u origin Padilla-iptq1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Padilla-iptq1' on GitHub by visiting:
+remote:      https://github.com/amillet2001/TSM3B/pull/new/Padilla-iptq1
+remote:
+To https://github.com/amillet2001/TSM3B
+ * [new branch]      Padilla-iptq1 -> Padilla-iptq1
+branch 'Padilla-iptq1' set up to track 'origin/Padilla-iptq1'.
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git status
+On branch Padilla-iptq1
+Your branch is up to date with 'origin/Padilla-iptq1'.
+
+nothing to commit, working tree clean
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git checkout Padilla-iptq1
+Already on 'Padilla-iptq1'
+Your branch is up to date with 'origin/Padilla-iptq1'.
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git add .
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git commit -m "fourth commit"
+[Padilla-iptq1 ca491e1] fourth commit
+ 1 file changed, 23 insertions(+)
+ create mode 100644 2021300623/2021300623-profile.html
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git status
+On branch Padilla-iptq1
+Your branch is ahead of 'origin/Padilla-iptq1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git push -u origin Padilla-iptq1
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 683 bytes | 683.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   d99413d..ca491e1  Padilla-iptq1 -> Padilla-iptq1
+branch 'Padilla-iptq1' set up to track 'origin/Padilla-iptq1'.
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git status
+On branch Padilla-iptq1
+Your branch is up to date with 'origin/Padilla-iptq1'.
+
+nothing to commit, working tree clean
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git add .
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git commit -m "5th Commit"
+[Padilla-iptq1 7357b91] 5th Commit
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git status
+On branch Padilla-iptq1
+Your branch is ahead of 'origin/Padilla-iptq1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git add .
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git commit -m "6th Commit"
+[Padilla-iptq1 bf19092] 6th Commit
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$ git status
+On branch Padilla-iptq1
+Your branch is ahead of 'origin/Padilla-iptq1' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Student411@DESKTOP-NKE45S6 MINGW64 ~/Desktop/PADILLA/TSM3B/2021300623 (Padilla-iptq1)
+$
