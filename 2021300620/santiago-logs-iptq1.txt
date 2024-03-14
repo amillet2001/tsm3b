@@ -1,0 +1,633 @@
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago
+$ git init
+Initialized empty Git repository in C:/Users/CISCO/Desktop/santiago/.git/
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git config --global user.name "eunice"
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git config --global user.email jinsangamov@gmail.com
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ touch test.txt
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git commit -m "first commit"
+[master (root-commit) eff681e] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git commit --amend --reset-author -m "resetting author"
+[master dd45ef4] resetting author
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ echo "this is my first commit" > test.txt
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git add .
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test.txt
+
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git commit -m "modified commit"
+[master a191b8d] modified commit
+ 1 file changed, 1 insertion(+)
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git config --global user.name "eunice"
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git config --global user.email jinsangamov@gmail.com
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ git clone https://github.com/amillet2001/TSM3B.git
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 167, done.
+remote: Counting objects: 100% (106/106), done.
+remote: Compressing objects: 100% (69/69), done.
+remote: Total 167 (delta 56), reused 63 (delta 32), pack-reused 61
+Receiving objects: 100% (167/167), 106.18 KiB | 787.00 KiB/s, done.
+Resolving deltas: 100% (60/60), done.
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago (master)
+$ cd TSM3B
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B (main)
+$ git checkout -b santiago-ipt2q1
+Switched to a new branch 'santiago-ipt2q1'
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B (santiago-ipt2q1)
+$ mkdir 2021300620
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B (santiago-ipt2q1)
+$ cd 2021300620
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ touch 2021300620.txt
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   2021300620.txt
+
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git commit -m "file commit"
+[santiago-ipt2q1 a988a9b] file commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300620/2021300620.txt
+g
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+nothing to commit, working tree clean
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git push -u origin santiago-iptq1
+error: src refspec santiago-iptq1 does not match any
+error: failed to push some refs to 'https://github.com/amillet2001/TSM3B.git'
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git push -u origin santiago-ipt2q1
+
+
+
+
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'santiago-ipt2q1' on GitHub by visiting:
+remote:      https://github.com/amillet2001/TSM3B/pull/new/santiago-ipt2q1
+remote:
+To https://github.com/amillet2001/TSM3B.git
+ * [new branch]      santiago-ipt2q1 -> santiago-ipt2q1
+branch 'santiago-ipt2q1' set up to track 'origin/santiago-ipt2q1'.
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300620-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git log
+commit a988a9bc0479646d38c16ad3b41cbc6226279e55 (HEAD -> santiago-ipt2q1, origin/santiago-ipt2q1)
+Author: eunice <jinsangamov@gmail.com>
+Date:   Fri Feb 16 09:41:56 2024 +0800
+
+    file commit
+
+commit 391e72b1bd15cfc6a66e4b84c6711596580dfadf (origin/main, origin/HEAD, main)
+Author: Axel Millet <110337707+amillet2001@users.noreply.github.com>
+Date:   Fri Feb 16 09:15:53 2024 +0800
+
+    Update instructions.txt
+
+commit faa770647195b2dd58f1bfbd74dc21a02d0b64a0
+Author: Axel Millet <110337707+amillet2001@users.noreply.github.com>
+Date:   Fri Feb 16 09:08:49 2024 +0800
+
+    Update instructions.txt
+
+commit 9a869ba07f9bb8dcf2e4be57bfe8c14cf5bd3cea (origin/arish-angelica)
+Author: christian <ramilxtian@gmail.com>
+Date:   Mon Feb 12 14:09:43 2024 +0800
+
+    1
+
+commit 20cefb8c1f34f1c50d26587683b256633054a08a (origin/razon-local, origin/angelica-sotelo, origin/Somera-local, origin/Simbillo-local, origin/Quizon-local, origin/Modelo-Petchalin-local, origin/Cabatbat-local, origin/AikoTolenada)
+Author: Axel Millet <110337707+amillet2001@users.noreply.github.com>
+Date:   Mon Feb 12 13:37:46 2024 +0800
+
+    Add files via upload
+
+commit a6bdf8e8223c82c249cc362a19d5a66e25fcd0e7
+Author: Axel Millet <110337707+amillet2001@users.noreply.github.com>
+Date:   Fri Feb 9 14:37:22 2024 +0800
+
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+    s̷̘̱̎̓ȇ̵̘̤n̵̡̏ḏ̵͝ ̴̺̘̒͐s̶̹͛ö̴͔̭́͊ḿ̸̥͂ě̸̗́ ̷̞̓h̸̩͙̿́ẽ̷̜l̶̡̬̚p̵̱͛,̸̨̫̈́ ̸̢̋̑í̵͙̽ ̷̪̝̎͝a̸̡̘̚m̶̮̠̽ ̵̞͙̀s̵̳̍ť̵̻̓ỉ̶͕̑l̴̜̐l̶̖͙̂ ̶̓͜h̵̩̆̾ē̸͉r̶̝̿ē̸̟̄.̸̻̱̿
+
+commit 5d1f6a24e2aeb10809f234c6c0d7db7256875fe9
+Author: Axel Millet <110337707+amillet2001@users.noreply.github.com>
+Date:   Fri Feb 9 13:37:54 2024 +0800
+
+    Initial commit
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git commit -m "my fourth commit
+>
+> q
+> q
+>
+>
+> git commit -m "my fourth commit"
+> "
+error: pathspec 'fourth' did not match any file(s) known to git
+error: pathspec 'commit
+' did not match any file(s) known to git
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git commit -m "my fourth commit"
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300620-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300620-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add 2021300620-profile.html
+fatal: pathspec '2021300620-profile.html' did not match any files
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../2021300620-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ ^C
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add ../2021300620-profile.html
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ../2021300620-profile.html
+
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ../2021300620-profile.html
+
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add ../2021300620-profile.html
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ../2021300620-profile.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2021300620-profile.html
+
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git commit -m "my html commit
+> "
+[santiago-ipt2q1 fd370ba] my html commit
+ 1 file changed, 25 insertions(+)
+ create mode 100644 2021300620-profile.html
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git push -u origin santiago-ipt2q1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 690 bytes | 690.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B.git
+   a988a9b..fd370ba  santiago-ipt2q1 -> santiago-ipt2q1
+branch 'santiago-ipt2q1' set up to track 'origin/santiago-ipt2q1'.
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ cd 2021300620
+bash: cd: 2021300620: No such file or directory
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ ^C
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add ../2021300620-profile.html
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2021300620-profile.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   2021300620-profile.html
+
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git commit -m "html com"
+[santiago-ipt2q1 06c434b] html com
+ 1 file changed, 25 insertions(+)
+ create mode 100644 2021300620/2021300620-profile.html
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git push -u origin santiago-ipt2q1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B.git
+   fd370ba..06c434b  santiago-ipt2q1 -> santiago-ipt2q1
+branch 'santiago-ipt2q1' set up to track 'origin/santiago-ipt2q1'.
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ echo "<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: purple:
+        }
+    </style>
+</head>
+<body>
+    <h1>My Profile</h1>
+    <ul>
+       <p> Name: Eunice Nicole G. Santiago</p>
+       <p> Age: 21</p>
+       <p> Section: TSM - 3B</p>
+    </ul>
+    <ul>
+        <h2>My Hobbies</ha2>
+        <li>Reading</li>
+        <li>Watching Kdrama</li>
+        <li>Playing Online Games</li>
+    </ul>
+    <h3>Message to my IPT2 Teacher </h3>
+    <p>Hi! I hope you're having a great day.I hope no matter how busy you are, you are still taking care of your self properly. It's okay to take a break sometimes! </p>
+
+</body>
+</html>" > 2021300620-profile.html
+bash: !DOCTYPE: event not found
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: h1{: command not found
+bash: color:: command not found
+bash: syntax error near unexpected token `}'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+>
+> "
+bash: /html: No such file or directory
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ got commit -m "my 6th commit"
+bash: got: command not found
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git commit -m "my 6th commit"
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+nothing to commit, working tree clean
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git push -u origin santiago-ipt2q1
+Everything up-to-date
+branch 'santiago-ipt2q1' set up to track 'origin/santiago-ipt2q1'.
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$  echo "<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: purple:
+        }
+    </style>
+</head>
+<body>
+    <h1>My Profile</h1>
+    <ul>
+       <p> Name: Eunice Nicole G. Santiago</p>
+       <p> Age: 21</p>
+       <p> Section: TSM - 3B</p>
+    </ul>
+    <ul>
+        <h2>My Hobbies</ha2>
+        <li>Reading</li>
+        <li>Watching Kdrama</li>
+        <li>Playing Online Games</li>
+    </ul>
+    <h3>Message to my IPT2 Teacher </h3>
+    <p>Hi! I hope you're having a great day.I hope no matter how busy you are, you are still taking care of your self properly. It's okay to take a break sometimes! </p>
+
+</body>
+</html>" > "2021300620-profile.html"
+bash: !DOCTYPE: event not found
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+bash: h1{: command not found
+
+
+bash: color:: command not found
+
+bash: syntax error near unexpected token `}'
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+bash: syntax error near unexpected token `newline'
+>
+> "
+bash: /html: No such file or directory
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add /c/Users/CISCO/Desktop/santiago/TSM3B/2021300620-profile.html
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+nothing to commit, working tree clean
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+nothing to commit, working tree clean
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add ^[[200~/2021300620-profile.html
+fatal: pathspec '?[200~/2021300620-profile.html' did not match any files
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add .
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+nothing to commit, working tree clean
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git add 2021300620-profile.html
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$ git status
+On branch santiago-ipt2q1
+Your branch is up to date with 'origin/santiago-ipt2q1'.
+
+nothing to commit, working tree clean
+
+CISCO@DESKTOP-SU34KIG MINGW64 ~/Desktop/santiago/TSM3B/2021300620 (santiago-ipt2q1)
+$
