@@ -1,0 +1,159 @@
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git init
+Initialized empty Git repository in C:/Users/mary joy moncada/Dropbox/PC/Desktop/MONCADA/.git/
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ touch test.txt
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git add test.txt
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git commit -m "test commit"
+[master (root-commit) 82a9343] test commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git commit --amend --reset-author "resetting author"
+error: pathspec 'resetting author' did not match any file(s) known to git
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ echo "modifying the content of test.txt" > test.txt
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git add test.txt
+warning: in the working copy of 'test.txt', LF will be replaced by CRLF the next time Git touches it
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git commit -m "modify test commit"
+[master 6a65470] modify test commit
+ 1 file changed, 1 insertion(+)
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git config --global user.name "Mary Joy H. Moncada"
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git config --global user.email "maryjoymoncada01@gmail.com"
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ git clone https://github.com/amillet2001/TSM3B.git
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 550, done.
+remote: Counting objects: 100% (310/310), done.
+remote: Compressing objects: 100% (195/195), done.
+remote: Total 550 (delta 167), reused 189 (delta 109), pack-reused 240
+Receiving objects: 100% (550/550), 2.27 MiB | 1.08 MiB/s, done.
+Resolving deltas: 100% (205/205), done.
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA (master)
+$ cd TSM3B
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B (main)
+$ git checkout -b moncada-late-act2
+Switched to a new branch 'moncada-late-act2'
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B (moncada-late-act2)
+$ mkdir 2021300642
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B (moncada-late-act2)
+$ cd 2021300642
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ touch activity2.txt
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git add activity2.txt
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git commit -m "my first commit in act2 file"
+[moncada-late-act2 478814a] my first commit in act2 file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300642/activity2.txt
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git push -u origin moncada-late-act2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'moncada-late-act2' on GitHub by visiting:
+remote:      https://github.com/amillet2001/TSM3B/pull/new/moncada-late-act2
+remote:
+To https://github.com/amillet2001/TSM3B.git
+ * [new branch]      moncada-late-act2 -> moncada-late-act2
+branch 'moncada-late-act2' set up to track 'origin/moncada-late-act2'.
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git status
+On branch moncada-late-act2
+Your branch is up to date with 'origin/moncada-late-act2'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2021300642-late-act2.docx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git add .
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git commit -m "my second commit in act2"
+[moncada-late-act2 72d8293] my second commit in act2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300642/2021300642-late-act2.docx
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git push -u origin moncada-late-act2
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.04 MiB | 1.21 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B.git
+   478814a..72d8293  moncada-late-act2 -> moncada-late-act2
+branch 'moncada-late-act2' set up to track 'origin/moncada-late-act2'.
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git status
+On branch moncada-late-act2
+Your branch is up to date with 'origin/moncada-late-act2'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   2021300642-late-act2.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git add .
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git commit -m "my third commit in act2"
+[moncada-late-act2 8d832d1] my third commit in act2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$ git push -u origin moncada-late-act2
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 216.89 KiB | 2.93 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/amillet2001/TSM3B.git
+   72d8293..8d832d1  moncada-late-act2 -> moncada-late-act2
+branch 'moncada-late-act2' set up to track 'origin/moncada-late-act2'.
+
+mary joy moncada@MJ-MONCADA MINGW64 ~/Dropbox/PC/Desktop/MONCADA/TSM3B/2021300642 (moncada-late-act2)
+$
