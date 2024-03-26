@@ -1,0 +1,161 @@
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git init
+Initialized empty Git repository in C:/Users/my computer/Desktop/Gamit/.git/
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ touch test.txt
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git add . test.txt
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git commit -m "first commit"
+[master (root-commit) e41765b] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git commit --amend --reset-author "reseting author"
+error: pathspec 'reseting author' did not match any file(s) known to git
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ echo "Hello" > test.txt
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git commit -m "second commit"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git config --global user.name "Gamit"
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git config --global user.email "stormclouds03@gmail.com"
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ git clone https://github.com/amillet2001/TSM3B
+Cloning into 'TSM3B'...
+remote: Enumerating objects: 572, done.
+remote: Counting objects: 100% (332/332), done.
+remote: Compressing objects: 100% (210/210), done.
+remote: Total 572 (delta 177), reused 207 (delta 115), pack-reused 240
+Receiving objects: 100% (572/572), 11.10 MiB | 2.18 MiB/s, done.
+Resolving deltas: 100% (215/215), done.
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit (master)
+$ cd TSM3B
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B (main)
+$ git checkout -b gamit-late-act2
+Switched to a new branch 'gamit-late-act2'
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B (gamit-late-act2)
+$ mkdir 2021300457
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B (gamit-late-act2)
+$ cd 2021300457
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ touch late.txt
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git add late.txt
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git commit -m "first commit in late txt"
+[gamit-late-act2 8ca60b0] first commit in late txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300457/late.txt
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git push -u origin gamit-late-act2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 306 bytes | 76.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'gamit-late-act2' on GitHub by visiting:
+remote:      https://github.com/amillet2001/TSM3B/pull/new/gamit-late-act2
+remote:
+To https://github.com/amillet2001/TSM3B
+ * [new branch]      gamit-late-act2 -> gamit-late-act2
+branch 'gamit-late-act2' set up to track 'origin/gamit-late-act2'.
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git add . 2021300457-late-act2.docx
+fatal: pathspec '2021300457-late-act2.docx' did not match any files
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git add . 2021300457-late-act2.docx
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git commit -m "First Commit of 2021300457"
+[gamit-late-act2 eb3bbfd] First Commit of 2021300457
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2021300457/2021300457-late-act2.docx
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git push -u origin gamit-late-act2
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 722.92 KiB | 4.60 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amillet2001/TSM3B
+   8ca60b0..eb3bbfd  gamit-late-act2 -> gamit-late-act2
+branch 'gamit-late-act2' set up to track 'origin/gamit-late-act2'.
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ echo "Proof Ubuntu" > 2021300457-late-act2.docx
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git commit -m "Second commit on 2021300457"
+On branch gamit-late-act2
+Your branch is up to date with 'origin/gamit-late-act2'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   2021300457-late-act2.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git add . 2021300457-Late-act2.docx
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git commit -m "Second Commit on 2021300457"
+[gamit-late-act2 cd1b426] Second Commit on 2021300457
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$ git push -u origin gamit-late-act2
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 115.73 KiB | 1.78 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/amillet2001/TSM3B
+   eb3bbfd..cd1b426  gamit-late-act2 -> gamit-late-act2
+branch 'gamit-late-act2' set up to track 'origin/gamit-late-act2'.
+
+my computer@DESKTOP-OELJLGE MINGW64 ~/Desktop/Gamit/TSM3B/2021300457 (gamit-late-act2)
+$
