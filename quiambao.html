@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .post {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        .pizza{
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiambao Blog</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="post">
+            <img class="pizza" src="https://cdn-icons-png.flaticon.com/512/1916/1916248.png" alt="">
+            <h2><a href="/post.html">Sample Blog Post</a></h2>
+            <p>Here goes the content of the blog post...</p>
+        </div>
+        <div class="post">
+            <h2><a href="/post.html">Another Blog Post</a></h2>
+            <p>Here goes the content of another blog post...</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Simple Blog</p>
+    </footer>
+</body>
+</html>
